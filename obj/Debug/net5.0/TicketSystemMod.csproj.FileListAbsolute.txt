@@ -1,0 +1,16 @@
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.exe
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.deps.json
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.runtimeconfig.json
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.runtimeconfig.dev.json
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\ref\TicketSystemMod.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\TicketSystemMod.pdb
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.csproj.AssemblyReference.cache
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.AssemblyInfoInputs.cache
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.AssemblyInfo.cs
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.csproj.CoreCompileInputs.cache
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\ref\TicketSystemMod.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.pdb
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.genruntimeconfig.cache
