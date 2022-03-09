@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace TicketSystemClass
+namespace TicketSystemMod
 {
-    public class Ticket
+    public abstract class Ticket
     {
         public UInt64 ticketID {get;set;}
         public string summary {get;set;}
@@ -18,7 +18,7 @@ namespace TicketSystemClass
             watching = new List<string>();
         }
 
-        public string Show()
+        public virtual string Display()
         {
             return $"Id: {ticketID}\nSummary: {summary}\nStatus: {status}\nPriority: {priority}\nSubmitter: {submit}\nAssigned: {assigned}\nWatching: {string.Join(", ", watching)}\n";
         }
