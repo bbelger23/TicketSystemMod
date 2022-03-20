@@ -16,3 +16,16 @@
 2022-03-20 11:30:48.7858|INFO|TicketSystemMod.Program|Program Started
 2022-03-20 11:50:11.4401|INFO|TicketSystemMod.Program|Program Started
 2022-03-20 11:50:40.8074|INFO|TicketSystemMod.Program|Program Ended
+2022-03-20 13:59:58.1035|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 13:59:58.1390|ERROR|TicketSystemMod.EnhanceFile|Input string was not in a correct format.
+2022-03-20 14:00:45.7876|ERROR|TicketSystemMod.EnhanceFile|Sequence contains no elements
+2022-03-20 14:00:48.3092|INFO|TicketSystemMod.Program|Ticket Added
+2022-03-20 14:00:50.2242|INFO|TicketSystemMod.Program|Program Ended
+2022-03-20 14:01:24.0455|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 14:01:24.0820|ERROR|TicketSystemMod.EnhanceFile|Input string was not in a correct format.
+2022-03-20 14:01:53.3099|ERROR|TicketSystemMod.EnhanceFile|Sequence contains no elements
+2022-03-20 14:03:23.1724|INFO|TicketSystemMod.Program|Ticket Added
+2022-03-20 14:03:23.8937|INFO|TicketSystemMod.Program|Program Ended
+2022-03-20 14:03:30.0611|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 14:04:02.8210|INFO|TicketSystemMod.Program|Ticket Added
+2022-03-20 14:04:03.4752|INFO|TicketSystemMod.Program|Program Ended

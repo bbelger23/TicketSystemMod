@@ -11,13 +11,13 @@ namespace TicketSystemMod
         static void Main(string[] args)
         {
             string defectFilePath = Directory.GetCurrentDirectory() + "\\tickets.csv";
-            //string enhanceFilePath = Directory.GetCurrentDirectory() + "\\enhancements.csv";
+            string enhanceFilePath = Directory.GetCurrentDirectory() + "\\enhancements.csv";
             //string taskFilePath = Directory.GetCurrentDirectory() + "\\tasks.csv";
 
             logger.Info("Program Started");
 
             DefectFile defectFile = new DefectFile(defectFilePath);
-            //EnhanceFile enhanceFile = new EnhanceFile(enhanceFilePath);
+            EnhanceFile enhanceFile = new EnhanceFile(enhanceFilePath);
             //TaskFile taskFile = new TaskFile(taskFilePath);
             
             string option = "";
@@ -84,6 +84,55 @@ namespace TicketSystemMod
 
                             defectFile.AddDefect(defect);
 
+                        }
+                        if (addChoice == "2")
+                        {
+                            // add ticket
+                            Enhancement enhancement = new Enhancement();
+                            // user adds summary
+                            Console.WriteLine("Enter ticket summary");
+                            enhancement.summary = Console.ReadLine();
+                            // user adds status of ticket
+                            Console.WriteLine("Enter ticket status");
+                            enhancement.status = Console.ReadLine();
+                            // user adds priority of ticket
+                            Console.WriteLine("Enter ticket priority");
+                            enhancement.priority = Console.ReadLine();
+                            // user adds who submitted the ticket
+                            Console.WriteLine("Enter ticket submitter");
+                            enhancement.submit = Console.ReadLine();
+                            // user adds who the ticket is assigned to
+                            Console.WriteLine("Enter who ticket is assigned to");
+                            enhancement.assigned = Console.ReadLine();
+                            // user adds who is watching the ticket
+                            string input;
+                            do
+                            {
+                                Console.WriteLine("Enter who is watching ticket (or done to quit)");
+                                input = Console.ReadLine();
+                                if (input != "done" && input.Length > 0)
+                                {
+                                    enhancement.watching.Add(input);
+                                }
+                            } while (input != "done");
+                            if (enhancement.watching.Count == 0)
+                            {
+                                enhancement.watching.Add("(No one is watching the ticket)");
+                            }
+                            // user adds software
+                            Console.WriteLine("Enter the software");
+                            enhancement.software = Console.ReadLine();
+                            // user adds cost
+                            Console.WriteLine("Enter the cost");
+                            enhancement.cost = Console.ReadLine();
+                            // user enters reason
+                            Console.WriteLine("Enter the reason");
+                            enhancement.reason = Console.ReadLine();
+                            // user enters estimate
+                            Console.WriteLine("Enter the estimate(MM/DD/YYYY)");
+                            enhancement.estimate = DateTime.Parse(Console.ReadLine());
+
+                            enhanceFile.AddEnhancement(enhancement);
                         }
                         
                     } while (addChoice == "1" || addChoice == "2" || addChoice == "3");
