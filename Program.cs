@@ -157,6 +157,13 @@ namespace TicketSystemMod
                                 Console.WriteLine(t.Display());
                             }
                         }
+                        if (displayChoice == "2")
+                        {
+                            foreach(Enhancement t in enhanceFile.Enhancements)
+                            {
+                                Console.WriteLine(t.Display());
+                            }
+                        }
                     } while (displayChoice == "1" || displayChoice == "2" || displayChoice == "3");
 
                 }
