@@ -7,7 +7,7 @@ using System.Linq;
 namespace TicketSystemMod
 {
     
-    //public string taskPath {get;set;}
+    
     public class DefectFile
     {
         public string defectPath {get;set;}
@@ -126,9 +126,59 @@ namespace TicketSystemMod
 
     public class TaskFile
     {
+        public string taskPath {get;set;}
+        public List<Task> Tasks {get;set;}
+         private static NLog.Logger logger = NLogBuilder.ConfigureNLog(Directory.GetCurrentDirectory() + "\\nlog.config").GetCurrentClassLogger();
         public TaskFile (string taskFilePath)
         {
+            taskPath = taskFilePath;
+            Tasks = new List<Task>();
 
+            try
+            {
+                StreamReader sr = new StreamReader(taskPath);
+                sr.ReadLine();
+                while (!sr.EndOfStream)
+                {
+                    Task task = new Task();
+                    string line = sr.ReadLine();
+
+                    string[] taskDetails = line.Split(',');
+                    task.ticketID = UInt64.Parse(taskDetails[0]);
+                    task.summary = taskDetails[1];
+                    task.status = taskDetails[2];
+                    task.priority = taskDetails[3];
+                    task.submit = taskDetails[4];
+                    task.assigned = taskDetails[5];
+                    task.watching = taskDetails[6].Split('|').ToList();
+                    task.projectName = taskDetails[7];
+                    task.dueDate = DateTime.Parse(taskDetails[8]);
+
+                    Tasks.Add(task);
+                }
+                sr.Close();
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex.Message);
+            }
+
+        }
+        public void AddTask(Task task)
+        {
+            try
+            {
+                task.ticketID = Tasks.Max(t => t.ticketID) + 1;
+                StreamWriter sw = new StreamWriter(taskPath, true);
+                sw.WriteLine($"{task.ticketID},{task.summary},{task.status},{task.priority},{task.submit},{task.assigned},{string.Join("|", task.watching)},{task.projectName},{task.dueDate}");
+                sw.Close();
+
+                Tasks.Add(task);
+            }
+            catch(Exception ex)
+            {
+                logger.Error(ex.Message);
+            }
         }
     }
 }

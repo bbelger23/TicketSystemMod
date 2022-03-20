@@ -12,13 +12,13 @@ namespace TicketSystemMod
         {
             string defectFilePath = Directory.GetCurrentDirectory() + "\\tickets.csv";
             string enhanceFilePath = Directory.GetCurrentDirectory() + "\\enhancements.csv";
-            //string taskFilePath = Directory.GetCurrentDirectory() + "\\tasks.csv";
+            string taskFilePath = Directory.GetCurrentDirectory() + "\\tasks.csv";
 
             logger.Info("Program Started");
 
             DefectFile defectFile = new DefectFile(defectFilePath);
             EnhanceFile enhanceFile = new EnhanceFile(enhanceFilePath);
-            //TaskFile taskFile = new TaskFile(taskFilePath);
+            TaskFile taskFile = new TaskFile(taskFilePath);
             
             string option = "";
             string addChoice = "";
@@ -85,6 +85,9 @@ namespace TicketSystemMod
                             defectFile.AddDefect(defect);
 
                         }
+                        
+                        logger.Info("Ticket Added");
+
                         if (addChoice == "2")
                         {
                             // add ticket
@@ -134,10 +137,57 @@ namespace TicketSystemMod
 
                             enhanceFile.AddEnhancement(enhancement);
                         }
+
+                        logger.Info("Ticket Added");
+
+                        if (addChoice == "3")
+                        {
+                            // add ticket
+                            Task task = new Task();
+                            // user adds summary
+                            Console.WriteLine("Enter ticket summary");
+                            task.summary = Console.ReadLine();
+                            // user adds status of ticket
+                            Console.WriteLine("Enter ticket status");
+                            task.status = Console.ReadLine();
+                            // user adds priority of ticket
+                            Console.WriteLine("Enter ticket priority");
+                            task.priority = Console.ReadLine();
+                            // user adds who submitted the ticket
+                            Console.WriteLine("Enter ticket submitter");
+                            task.submit = Console.ReadLine();
+                            // user adds who the ticket is assigned to
+                            Console.WriteLine("Enter who ticket is assigned to");
+                            task.assigned = Console.ReadLine();
+                            // user adds who is watching the ticket
+                            string input;
+                            do
+                            {
+                                Console.WriteLine("Enter who is watching ticket (or done to quit)");
+                                input = Console.ReadLine();
+                                if (input != "done" && input.Length > 0)
+                                {
+                                    task.watching.Add(input);
+                                }
+                            } while (input != "done");
+                            if (task.watching.Count == 0)
+                            {
+                                task.watching.Add("(No one is watching the ticket)");
+                            }
+                            // user adds project name
+                            Console.WriteLine("Enter project name");
+                            task.projectName = Console.ReadLine();
+                            // user adds due date
+                            Console.WriteLine("Enter due date");
+                            task.dueDate = DateTime.Parse(Console.ReadLine());
+
+                            taskFile.AddTask(task);
+                        }
+                        logger.Info("Ticket Added");
                         
                     } while (addChoice == "1" || addChoice == "2" || addChoice == "3");
 
-                    logger.Info("Ticket Added");
+                    
                     
                 } else if (option == "2")
                 {
