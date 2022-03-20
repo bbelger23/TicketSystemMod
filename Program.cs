@@ -26,7 +26,7 @@ namespace TicketSystemMod
 
             // user options
             do{
-                Console.WriteLine("Select option");
+                Console.WriteLine("Select Option");
                 Console.WriteLine("1. Add Tickets");
                 Console.WriteLine("2. Display Tickets");
                 Console.WriteLine("Press any key to quit");
@@ -36,11 +36,11 @@ namespace TicketSystemMod
                 if (option == "1")
                 {
                     do{
-                        Console.WriteLine("Select choice");
+                        Console.WriteLine("Select Choice");
                         Console.WriteLine("1. Add Bug/Defect Ticket");
                         Console.WriteLine("2. Add Enhancement Ticket");
                         Console.WriteLine("3. Add Task Ticket");
-                        Console.WriteLine("Press any key to return to option");
+                        Console.WriteLine("Press any key to return to Select Option");
 
                         addChoice = Console.ReadLine();
 
@@ -85,7 +85,7 @@ namespace TicketSystemMod
                             defectFile.AddDefect(defect);
 
                         }
-                        
+
                         logger.Info("Ticket Added");
 
                         if (addChoice == "2")
@@ -192,11 +192,11 @@ namespace TicketSystemMod
                 } else if (option == "2")
                 {
                     do{
-                        Console.WriteLine("Select choice");
+                        Console.WriteLine("Select Choice");
                         Console.WriteLine("1. Display Bug/Defect Ticket");
                         Console.WriteLine("2. Display Enhancement Ticket");
                         Console.WriteLine("3. Display Task Ticket");
-                        Console.WriteLine("Press any key to return to option");
+                        Console.WriteLine("Press any key to return to Select Option");
 
                         displayChoice = Console.ReadLine();
 
@@ -210,6 +210,13 @@ namespace TicketSystemMod
                         if (displayChoice == "2")
                         {
                             foreach(Enhancement t in enhanceFile.Enhancements)
+                            {
+                                Console.WriteLine(t.Display());
+                            }
+                        }
+                        if (displayChoice == "3")
+                        {
+                            foreach(Task t in taskFile.Tasks)
                             {
                                 Console.WriteLine(t.Display());
                             }

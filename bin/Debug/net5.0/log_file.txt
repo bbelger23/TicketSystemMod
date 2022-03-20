@@ -43,3 +43,5 @@
 2022-03-20 14:56:18.4013|INFO|TicketSystemMod.Program|Program Started
 2022-03-20 14:56:41.9546|INFO|TicketSystemMod.Program|Ticket Added
 2022-03-20 14:56:42.5331|INFO|TicketSystemMod.Program|Program Ended
+2022-03-20 14:59:07.6823|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 14:59:33.0677|INFO|TicketSystemMod.Program|Program Ended
