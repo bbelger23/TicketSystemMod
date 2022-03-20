@@ -22,7 +22,7 @@ namespace TicketSystemMod
             
             string option = "";
             string addChoice = "";
-            //string displayChoice = "";
+            string displayChoice = "";
 
             // user options
             do{
@@ -90,6 +90,26 @@ namespace TicketSystemMod
 
                     logger.Info("Ticket Added");
                     
+                } else if (option == "2")
+                {
+                    do{
+                        Console.WriteLine("Select choice");
+                        Console.WriteLine("1. Display Bug/Defect Ticket");
+                        Console.WriteLine("2. Display Enhancement Ticket");
+                        Console.WriteLine("3. Display Task Ticket");
+                        Console.WriteLine("Press any key to return to option");
+
+                        displayChoice = Console.ReadLine();
+
+                        if (displayChoice == "1")
+                        {
+                            foreach(Defect t in defectFile.Defects)
+                            {
+                                Console.WriteLine(t.Display());
+                            }
+                        }
+                    } while (displayChoice == "1" || displayChoice == "2" || displayChoice == "3");
+
                 }
             } while (option == "1" || option == "2"); 
 
