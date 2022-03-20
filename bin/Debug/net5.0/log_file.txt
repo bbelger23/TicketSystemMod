@@ -1,0 +1,16 @@
+2022-03-16 20:28:46.1478|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 20:48:18.2966|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 21:00:02.9667|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 21:00:31.8524|ERROR|TicketSystemMod.DefectFile|Sequence contains no elements
+2022-03-16 21:02:35.2513|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 21:02:50.7211|ERROR|TicketSystemMod.DefectFile|Sequence contains no elements
+2022-03-16 21:04:01.6101|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 21:04:23.7615|ERROR|TicketSystemMod.DefectFile|Sequence contains no elements
+2022-03-16 21:18:08.6922|INFO|TicketSystemMod.Program|Program Started
+2022-03-16 21:18:23.7700|ERROR|TicketSystemMod.DefectFile|Sequence contains no elements
+2022-03-20 10:13:09.9211|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 10:13:33.7247|ERROR|TicketSystemMod.DefectFile|Sequence contains no elements
+2022-03-20 10:20:25.0546|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 11:28:51.2643|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 11:30:30.3054|INFO|TicketSystemMod.Program|Program Started
+2022-03-20 11:30:48.7858|INFO|TicketSystemMod.Program|Program Started

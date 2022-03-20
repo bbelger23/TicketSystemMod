@@ -14,3 +14,7 @@ C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\
 C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\ref\TicketSystemMod.dll
 C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.pdb
 C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.genruntimeconfig.cache
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\NLog.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\Users\belge\OneDrive\Documents\.Net Database Programming\TicketSystemMod\obj\Debug\net5.0\TicketSystemMod.csproj.CopyComplete
